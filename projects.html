@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+</head>
+
+<header class="header">
+    <a href='view.html'>jeccfai</a>
+</header>
+
+<body class="body animsition">
+
+<div class="row">
+    <div id="fyp-text" class="column">
+        <div class="left-font">
+            <div class="h">
+                <strong>Skin Lesion Analysis</strong><br>
+            </div>
+            <div>
+                This project is the final year project I am currently carrying out for my 
+                penultimate year of university. The project is research based and is 
+                about the computational analysis of pigmented skin lesions such as skin 
+                cancers (e.g. melanoma, non-melanoma) using Computer Vision. My motive 
+                in this project is to compare deep learning methods to traditional methods.
+            </div>
+        </div>
+    </div>
+    <div id="fyp-img" class="column"></div>
+</div>
+
+<div class="row">
+    <div id="ann-img" class="column">
+        
+    </div>
+    <div id="ann-text" class="column">
+        <div class="left-font">
+            <div class="h">
+                <strong>Artificial Neural Network</strong><br>
+            </div>
+            <div>
+                In my 2nd year of university, one of coursework tasks was to develop an 
+                Artificial Neural Network (ANN) using the error backpropogation algorithm. 
+                This ANN was used to predict the pan evaporation given predictors such as 
+                temperature, wind speed, humidity and more. The project included pre-processing
+                of the data in which I used Weka to do so. Randomising, splitting and normalising
+                my data before passing it into the ANN.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div id="propcon-text" class="column">
+        <div class="left-font">
+            <div class="h">
+                <strong>Directory CMS Website</strong><br>
+            </div>
+            <div>
+                During the summer of 2020, I was asked to help build a website for a start-up 
+                company. Given the functionality the client wanted and only me working on it, I 
+                decided to use WordPress as it offers easy management with a lot of possible
+                plugins to choose from. I was able to expand my knowledge of WordPress from 
+                my 2nd year of university to which I also improved my CSS skills.
+            </div>
+        </div>
+    </div>
+    <div id="propcon-img" class="column">
+        <img src="1.png">
+    </div>
+</div>
+
+<div class="row">
+    <div id="helpdesk-img" class="column">
+        <div class="left-font">
+            <div class="h">
+                <strong>Helpdesk Website</strong><br>
+            </div>
+            <div>
+                During the 2nd year of university, the entire course was split into teams and
+                given the task to develop a helpdesk webiste. This module was split over two 
+                semesters, the first was to develop with a team of your choice, a helpdesk 
+                website from scratch. For this semester, our team made use of HTML, CSS, 
+                PHP Laravel, phpMyAdmin, SQL and tools such as Slack to assist us in communication.
+                I was involved in the design of wireframes and putting together a design report
+                for the website. I also had a hand in developing using PHP Laravel which was
+                a new experience for me.
+                <br><br>
+                The second semester involved a similar task however the teams were randomised 
+                and we had to develop the website using a CMS of the choices, WordPress, Joomla or
+                Drupal. This part of the module I was in charge of implementing and designing the
+                website, finding plugins I required along the way. I also lead the demonstration of
+                this website, taking on any questions when asked. This semester, our team used 
+                WhatsApp for communication and Trello to keep on track.
+            </div>
+        </div>
+    </div>
+    <div id="helpdesk-text" class="column">
+
+    </div>
+</div>
+
+<div class="row">
+    <div id="mobile-text" class="column">
+        <div class="left-font">
+            <div class="h">
+                <strong>Mobile Application: RecipeReserve</strong><br>
+            </div>
+            <div>
+                This project involved developing an Android mobile application of our choice 
+                as long as the idea possible in the timeframe given. I chose to develop a 
+                recipe taking application as losing a recipe I have previously used is a 
+                problem I face. I used Java in Android Studio and used Firebase Storage and 
+                database.
+            </div>
+        </div>
+    </div>
+    <div id="mobile-img" height="200px" class="column">
+        <img src="EditRecipe.png">
+    </div>
+</div>
+
+<div class="row">
+    <div id="" class="column">
+        <div class="left-font">
+            <div class="h">
+                <strong> </strong><br>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="" class="column">
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".animsition").animsition({
+            inClass: 'fade-in',
+            outClass: 'fade-out',
+            inDuration: 1500,
+            outDuration: 800,
+            linkElement: '.animsition-link',
+            // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '', // e.g '<img src="loading.svg" />'
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+            overlay : false,
+            overlayClass : 'animsition-overlay-slide',
+            overlayParentElement : 'body',
+            transition: function(url){ window.location.href = url; }
+        });
+    });
+</script>
+</body>
+</html>
